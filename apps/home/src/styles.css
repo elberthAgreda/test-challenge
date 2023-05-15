@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+technical-test-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.item {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: rebeccapurple;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    flex-flow: column;
+    transition: all 0.2s linear;
+}
+
+.item:hover {
+    background-color: #e91e63;
+}
+
+.list-gallery {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 20px;
+}
+.gallery {
+    position: relative;
+    width: 150px;
+    flex: 1;
+}
+.gallery span {
+    position: absolute;
+    width: 100px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    top: 16px;
+    color: #fff;
+    font-size: 13px;
+}

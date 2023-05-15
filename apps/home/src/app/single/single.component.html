@@ -1,0 +1,14 @@
+<div class="single">
+    <h1>Album gallery: {{id}}</h1>
+    <button (click)="onBack()">Back</button>
+    
+    <input type="text" [(ngModel)]="query">
+    <button (click)="searchItem()">Search</button>
+
+    <div class="list-gallery">
+        <div class="gallery" *ngFor="let item of photo" >
+            <img [src]="item.thumbnailUrl">
+            <span>{{item.title}}</span>
+        </div>
+    </div>
+</div>
